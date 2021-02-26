@@ -1,5 +1,9 @@
 name: main
-on: push
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   publish:
     runs-on: ubuntu-latest
