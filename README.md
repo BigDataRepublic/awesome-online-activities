@@ -1,5 +1,8 @@
-## Awsome online activities
--- A curated list of online activities for teams
+## Awesome online activities
+
+    A curated list of online activities for teams
+
+https://bigdatarepublic.github.io/awesome-online-activities/
 
 # How to contribute
 Add a simple markdown description file to either the `list/platform` or `list/social` folder and create a PR.
