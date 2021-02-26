@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "awesome_online_activities"
+version = "0.1.0"
+description = ""
+authors = ["A. Bram Neijt <bram@neijt.nl>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^20.8b1", allow-prereleases = true}
+
+[tool.poetry.scripts]
+awesome_online_activities = 'awesome_online_activities.app:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
