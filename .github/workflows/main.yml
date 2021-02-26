@@ -6,10 +6,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Gen dummy page
-        run: |
-          mkdir -p public
-          cp README.md public/index.md
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: Install poetry
+        run: pip install poetry==1.1.4 poetry-core==1.0.0        
+      - name: Poetry install
+        run: poetry install
+      - name: Gen pages
+        run: poetry run awesome_online_activities
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
