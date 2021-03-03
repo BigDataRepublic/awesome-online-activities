@@ -30,6 +30,7 @@ def main():
                 + social
                 + [load_item("list/platform.md")]
                 + platforms
+                + [load_item("list/also.md")]
             )
         )
     return
